@@ -55,12 +55,13 @@ body{
   100%{transform:scale(1)}
 }
 
+
 .letter{
   position:absolute;
   top:10px;
-  left:4%;
-  width:92%;
-  height:90vh;
+  left:6%;
+  width:88%;
+  max-height:75vh;  
   background-image:url("https://i.pinimg.com/1200x/a2/3a/d6/a23ad679b9a1772a5db449bf8df8e718.jpg");
   background-size:cover;
   background-position:center;
@@ -70,8 +71,9 @@ body{
   transform:translateY(90px);
   opacity:0;
   transition:1s;
-  overflow:hidden;
+  overflow:auto;
 }
+
 
 .envelope.open .letter{
   transform:translateY(-210px);
@@ -256,3 +258,5 @@ function startConfetti(){
 
 </body>
 </html>
+
+
